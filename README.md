@@ -1,5 +1,5 @@
 # Spamrito v3.0
-Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como Uber, 99, Aiqfome, RecargaMulti, Vivo e Claro.
+Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como **Uber**, **99**, **Aiqfome**, **RecargaMulti**, **Vivo** e **Claro**.
 
 ## Requisitos
 * NodeJS Instalado
