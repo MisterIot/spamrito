@@ -98,30 +98,10 @@ const curl = async (uri, postdata, headers = {}, method, followallredirects = fa
     return promise;
 }
 
-const gdados = async function (pontuacao = false) {
-	var config = {}
-	if (pontuacao) {
-		config["pontuacao"] = 'S';
-	} else {
-		config["pontuacao"] = 'N';
-	}
-	return await curl('https://www.4devs.com.br/ferramentas_online.php', 'acao=gerar_pessoa&sexo=I&pontuacao=' + config.pontuacao + '&idade=0&cep_estado=&txt_qtde=1&cep_cidade=', {
-		'Host': 'www.4devs.com.br'
-		}, 'POST').then((res) => {
-			const dados = JSON.parse(res.body);
-			if (dados["nome"]) {
-				return { status: 1, dados: { nome: dados["nome"], idade: dados["idade"], cpf: dados["cpf"], rg: dados["rg"], dtnasc: dados["data_nasc"], sexo: dados["sexo"], signo: dados["signo"], mae: dados["mae"], pai: dados["pai"], email: dados["email"], senha: dados["senha"], cep: dados["cep"], endereco: dados["endereco"], numero: dados["numero"], bairro: dados["bairro"], cidade: dados["cidade"], estado: dados["estado"], telefone_fixo: dados["telefone_fixo"], celular: dados["celular"], altura: dados["altura"], peso: dados["peso"], tipo_sanguineo: dados["tipo_sanguineo"], cor: dados["cor"] } }
-			} else {
-				return { status: 0, error: 'Não foi possivel gerar os dados.' }
-			}
-	});
-}
-
 module.exports = {
 	sleep,
 	random,
 	str_shuffle,
 	getstr,
-	gdados,
 	curl
 }
