@@ -12,14 +12,20 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 * `npm i cli-progress`
 
 ## Instalação
-I: ```node spam.js```
+```apt update && apt upgrade```
+```apt install git```
+```git clone https://github.com/KiritoOfficial/spamrito```
 
 ## Exemplo de uso
 Start: ```node spam.js```
 
 ![banner](https://user-images.githubusercontent.com/43851118/97900674-fe666780-1d08-11eb-9574-1c32777203d6.jpg)
 
-## Links
+## Contato
 * [Telegram](https://t.me/KiritoOfficial)
 * [Youtube](https://youtube.com/c/KiritoOfficial)
 * [GitHub](https://github.com/KiritoOfficial)
+
+## License
+
+Copyright 2020 Kirito Official
