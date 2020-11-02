@@ -1,4 +1,4 @@
-apt install nodejs
+apt install nodejs -y
 npm i colors
 npm i crypto
 npm i request
