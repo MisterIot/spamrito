@@ -13,7 +13,7 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 
 ## Instalação
 * ```apt update && apt upgrade```
-* ```apt install git```
+* ```apt install git -y```
 * ```git clone https://github.com/KiritoOfficial/spamrito```
 * ```cd spamrito```
 * ```chmod +x *```
