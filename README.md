@@ -15,5 +15,5 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 a
 
 ## Exemplo de uso
-
 Start: ```node spam.js```
+![banner](https://user-images.githubusercontent.com/43851118/97900540-c4956100-1d08-11eb-8c17-581e384b569e.jpg)
