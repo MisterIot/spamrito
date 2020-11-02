@@ -3,7 +3,7 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como U
 
 ## Instalação
 
-Você precisar de alguns modulo extra do NPM são eles:\n
+Você precisar de alguns modulo extra do NPM são eles:&nbsp;
 `npm i colors`
 `npm i crypto`
 `npm i request`
