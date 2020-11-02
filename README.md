@@ -1,9 +1,9 @@
-# spamrito v3.0
+# Spamrito v3.0
 Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como Uber, 99, Aiqfome, RecargaMulti, Vivo e Claro.
 
 ## Instalação
 
-Você precisar de alguns modulo extra do NPM são eles:
+Você precisar de alguns modulo extra do NPM são eles:\n
 `npm i colors`
 `npm i crypto`
 `npm i request`
@@ -12,4 +12,4 @@ Você precisar de alguns modulo extra do NPM são eles:
 
 ## Exemplo de uso
 
-```node spam.js```
+Start: ```node spam.js```
