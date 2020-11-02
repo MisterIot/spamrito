@@ -4,7 +4,7 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 ## Requisitos
 * NodeJS Instalado
 
-## Modulos utilizados.
+## Modulos necessario
 * `npm i colors`
 * `npm i crypto`
 * `npm i request`
