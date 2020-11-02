@@ -12,9 +12,9 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 * `npm i cli-progress`
 
 ## Instalação
-```apt update && apt upgrade```
-```apt install git```
-```git clone https://github.com/KiritoOfficial/spamrito```
+* ```apt update && apt upgrade```
+* ```apt install git```
+* ```git clone https://github.com/KiritoOfficial/spamrito```
 
 ## Exemplo de uso
 Start: ```node spam.js```
