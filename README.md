@@ -16,4 +16,5 @@ a
 
 ## Exemplo de uso
 Start: ```node spam.js```
+
 ![banner](https://user-images.githubusercontent.com/43851118/97900674-fe666780-1d08-11eb-9574-1c32777203d6.jpg)
