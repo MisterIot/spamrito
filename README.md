@@ -15,6 +15,9 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 * ```apt update && apt upgrade```
 * ```apt install git```
 * ```git clone https://github.com/KiritoOfficial/spamrito```
+* ```cd spamrito```
+* ```chmod +x *```
+* ```bash install.sh```
 
 ## Exemplo de uso
 Start: ```node spam.js```
