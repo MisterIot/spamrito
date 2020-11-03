@@ -31,4 +31,4 @@ Start: ```node spam.js```
 
 ## License
 
-Copyright 2020 Kirito Official
+Copyright 2020 [KiritoOfficial](https://t.me/KiritoOfficial)
