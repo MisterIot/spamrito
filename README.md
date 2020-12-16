@@ -4,13 +4,6 @@ Spamrito e um SPAM de alta qualidade, utilizando API de serviços grandes como *
 ## Requisitos
 * NodeJS Instalado
 
-## Modulos NPM
-* `npm i colors`
-* `npm i crypto`
-* `npm i request`
-* `npm i readline-sync`
-* `npm i cli-progress`
-
 ## Instalação
 * ```apt update && apt upgrade```
 * ```apt install git -y```
